@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Beautiful Castine</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO PAGE -->
+<div class="page active" id="hero">
+  <h1>FOR MY BEAUTIFUL CASTINE ❤️</h1>
+  <button onclick="showPage('prompt')">Begin our journey</button>
+</div>
+
+<!-- PROMPT PAGE -->
+<div class="page" id="prompt">
+  <h1>I HAVE SOMETHING FOR YOU</h1>
+  <p>Do you want to see your little gifts?</p>
+  <div class="prompt-buttons">
+    <button onclick="showPage('gifts')">YES, PLEASE</button>
+    <button onclick="showPage('oops')">NO, THANKS</button>
+  </div>
+</div>
+
+<!-- OOPS PAGE -->
+<div class="page" id="oops">
+  <h1>Oops! 😅</h1>
+  <p>Maybe next time…</p>
+  <button onclick="showPage('prompt')">TRY AGAIN</button>
+</div>
+
+<!-- GIFTS PAGE -->
+<div class="page" id="gifts">
+  <h1>These are for you 💝</h1>
+  <div class="gifts">
+    <button class="gift-btn" onclick="showPage('gift1')">Gift 1</button>
+    <button class="gift-btn" onclick="showPage('gift2')">Gift 2</button>
+    <button class="gift-btn" onclick="showPage('gift3')">Gift 3</button>
+  </div>
+</div>
+
+<!-- GIFT 1 -->
+<div class="page" id="gift1">
+  <h1>This song is for us 🎶</h1>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/2Vv-BfVoq4g" allowfullscreen></iframe>
+  <button onclick="showPage('gifts')">Back</button>
+</div>
+
+<!-- GIFT 2 -->
+<div class="page" id="gift2">
+  <h1>Why I Love You ❤️</h1>
+  <div class="letter">
+    <p>I love how you smile — it feels genuine and warm.</p>
+    <p>I love your strength and calm energy.</p>
+    <p>I love how natural we are together.</p>
+    <p>I love your laugh — it makes my day better instantly.</p>
+    <p>I love how you care deeply, even when you pretend not to.</p>
+    <p>And honestly… I just love YOU, Castine.</p>
+  </div>
+  <button onclick="showPage('gifts')">Back</button>
+</div>
+
+<!-- GIFT 3 -->
+<div class="page" id="gift3">
+  <h1>A Letter For You 💌</h1>
+  <div class="letter">
+    <p>My beautiful Castine,</p>
+    <p>Being with you feels effortless. You bring peace into my life in ways I never expected.</p>
+    <p>When you call me <strong>"we mtoto wewe"</strong>, I smile every single time. It’s playful, it’s ours, and it reminds me how lucky I am.</p>
+    <p>You are my comfort, my happiness, and my favorite person.</p>
+    <p>I choose you today, tomorrow, and always.</p>
+    <p><strong>Forever yours,<br>Alexander ❤️</strong></p>
+  </div>
+  <div class="bottom-buttons">
+    <button onclick="showPage('gifts')">Back</button>
+    <button onclick="showPage('hero')">Home</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
